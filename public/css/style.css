@@ -1,0 +1,23 @@
+body {
+  background-color: #e5e5e5;
+}
+.cst-wrapper {
+  width: 70vw;
+  margin-top: 120px;
+}
+.navbar .navbar-brand img {
+  width: 100px;
+}
+.cst-nav {
+  background-color: #D4EDDA
+}
+
+/* media queries */
+@media (max-width: 575px) {
+  .greetings {
+    font-size: 32px;
+  }
+  .cst-jum-class {
+    padding-top: 100px;
+  }
+}

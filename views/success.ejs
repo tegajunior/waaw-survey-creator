@@ -1,0 +1,14 @@
+<%- include("header") -%>
+<div class="jumbotron mt-4 cst-jum-class">
+  <h1 class="display-4 text-success greetings">Hello <b><%- user.firstName %>,</b></h1>
+  <p class="lead">
+    You have successfully registered on our survey creation platform. 
+    Please note your user ID <kbd><b><%- user.userString %></b></kbd>
+  </p>
+  <hr class="my-4" />
+  <p>
+    Our platform helps our registered user create surveys
+  </p>
+  <a class="btn btn-success btn-lg" href="/surveys" role="button">Create Survey</a>
+</div>
+<%- include("header") -%>

@@ -1,0 +1,31 @@
+{
+  "name": "task-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "nodejs",
+    "express",
+    "template",
+    "engine",
+    "ejs"
+  ],
+  "author": "chidiebere",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "config": "^3.3.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.4.2",
+    "mongoose": "^6.0.3",
+    "randomstring": "^1.2.1",
+    "winston": "^2.4.0"
+  }
+}

@@ -1,0 +1,84 @@
+<%- include("header") -%>
+<div class="container cst-wrapper">
+  <form action="/surveys" method="POST">
+    <% if (showSurveySuccessAlert) { %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <i>Congratulations!</i> Your <strong><%- surveyTitle %></strong> has been created successfully.
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <% } %>
+    <div class="display-5 mb-3">
+      Create Your Survey
+      <i><span class="text-danger"> &nbsp; * </span>are required fields.</i>
+    </div>
+    <div class="form-row mb-sm-0 mb-lg-3">
+      <div class="col-sm-12 col-md-6 mb-sm-4 mb-md-2">
+        <span class="text-danger">*</span>
+        <input
+          type="text"
+          name="title"
+          class="form-control"
+          placeholder="Title of survey"
+          required
+        />
+      </div>
+      <div class="col-sm-12 col-md-6 mb-sm-4 mb-md-2">
+        <span class="text-danger">*</span>
+        <textarea
+          name="description"
+          class="form-control"
+          placeholder="Description of survey"
+          required
+        ></textarea>
+      </div>
+    </div>
+    <div class="form-row mb-5">
+      <div class="col-sm-12 col-md-6 mb-sm-4 mb-md-2">
+        <span class="text-danger">*</span>
+        <input
+          type="text"
+          name="place"
+          class="form-control"
+          placeholder="Place"
+          required
+        />
+      </div>
+      <div class="col-sm-12 col-md-6 mb-sm-4 mb-md-2">
+        <span class="text-danger">*</span>
+        <input
+          type="text"
+          name="user"
+          class="form-control"
+          placeholder="User ID"
+          required
+        />
+      </div>
+    </div>
+    <div class="form-row mb-5">
+      <div class="col-sm-12 col-md-6 mb-sm-4 mb-md-2">
+        <label for="startdate" class="mr-3">Start Date</label>
+        <span class="text-danger">*</span>
+        <input type="datetime-local" name="startDate" id="startdate" required />
+      </div>
+      <div class="col-sm-12 col-md-6 mb-sm-4 mb-md-2">
+        <label for="enddate" class="mr-3">End Date</label>
+        <span class="text-danger">*</span>
+        <input type="datetime-local" name="endDate" id="enddate" required />
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-success btn-lg">
+        Create Survey
+      </button>
+    </div>
+  </form>
+</div>
+<%- include("footer") -%>
